@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/kendo.materialblack.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="css/kendo.common.min.css" />  
+    <link rel="stylesheet" href="css/kendo.dataviz.min.css" />
+    <link rel="stylesheet" href="css/kendo.dataviz.default.min.css" />
+
+    <!-- Scripts -->      
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/kendo.all.min.js"></script>
+</head>
+    <body id="body">
+        
+        <div style="width:800px; margin: auto; margin-top: 350px; font-size: large;">
+            <div class="row" style="color: black; font-weight: bold;">
+                <div class="col-md-1" style="height: 40px;">            
+                    <i id="mailChimpAddButton" class="fa fa-plus-square fa-3x" style="cursor: pointer;"></i> 
+                </div>
+                <div class="col-md-5" style="height: 40px;">            
+                    Add Campaign
+                </div>
+                <div class="col-md-5" style="height: 40px; padding-right: 0px;">
+                    <span style="float:right">Upload Email Addresses</span>
+                </div>
+                <div class="col-md-1" style="height: 40px;" style="padding-left: 5px;">
+                    <span id="mailChimpUploadButton" class="fa-stack fa-lg" >
+                        <i class="fa fa-refresh fa-spin fa-stack-2x" ></i>
+                        <i class="fa fa-envelope fa-stack-1x" style="cursor: pointer;"></i>
+                    </span>
+                </div>
+                
+            </div>
+        
+            
+            <br/>
+
+            <div id="mailChimpConfigGrid"> </div>
+
+            <br />
+
+            <img id="mailChimpSaveButton"src="/MailChimpWeb/images/Capture.png" alt="Save" style="width: 258px; float:right; cursor: pointer;"/>
+
+        </div>
+
+        <script type="text/javascript">
+
+            var selectedGridRow;
+
+            var gridDataSource;
+
+            $(document).ready(function () {
+
+                gridDataSource = new kendo.data.DataSource({
+                    dataType: "json",
+                    type: "GET",
+                    transport: {
+                        read: "http://localhost/MailChimpService/ConfigService.svc/GetConfigs/"
+                    },
+                    schema: {
+                        data: "ConfigList",
+                        model: {
+                            fields: {
+                                Id: { editable: false },
+                                Account: { editable: true },
+                                Campaign: { editable: true }
+                            }
+                        }
+                    }
+                });
+
+                buildGrid();
+
+                $('#mailChimpAddButton').click(function () {
+
+                    gridDataSource.add({ Id: null, Account: { AccountId: "", AccountName: "" }, Campaign: { CampaignName: "", CampaignId: ""} });
+
+                });
+
+            });
+
+            function buildGrid() {
+
+                $("#mailChimpConfigGrid").kendoGrid({
+                    dataSource: gridDataSource,
+                    columns: [
+                        { field: "Id", title: "   ", width: 75 },
+                        { field: "Account", title: "Account", width: 300, editor: accountOptionEditor, template: "#=Account.AccountName#" },
+                        { field: "Campaign", title: "Campaign", width: 300, editor: campaignOptionEditor, template: "#=Campaign.CampaignName#" },
+                        { field: "Id", title: "   ", width: 25, template: "<i class='fa fa-trash-o' style='cursor: pointer;' onclick='deleteConfig(#:data.Id#)'></i>"}
+                    ],
+                    editable: true,
+                    selectable: true,
+                    change: function () {
+                        var gridRows = this;
+                        // capture the selected row
+                        gridRows.select().each(function () {
+                            selectedGridRow = gridRows.dataItem($(this));
+                        });
+
+                    }
+                });
+            }
+
+            function accountOptionEditor(container, options) {
+                $('<input data-text-field="AccountName" data-value-field="AccountId" data-bind="value:' + options.field + '"/>')
+                    .appendTo(container)
+                    .kendoDropDownList({
+                        autobind: true,
+                        dataTextField: "AccountName",
+                        dataValueField: "AccountId",
+                        dataSource: {
+                            type: "json",
+                            transport: {
+                                read: "http://localhost/MailChimpService/ConfigService.svc/GetAccounts/"
+                            },
+                            schema: {
+                                data: "AccountList"
+                            }
+                        },
+                        change: function () {
+                            // Alter the Service Location Grid DataSource to contain the Selected Account              
+                            for (var i = 0; i < gridDataSource._data.length; i++) {
+                                if (gridDataSource._data[i].Id == selectedGridRow.Id) {
+                                    gridDataSource._data[i].AccountId = selectedGridRow.Account.AccountId;
+                                    gridDataSource._data[i].AccountName = selectedGridRow.Account.AccountName;
+                                }
+                            }
+
+                            buildGrid();
+                        }
+                    });
+            }
+
+            function campaignOptionEditor(container, options) {
+                $('<input data-text-field="CampaignName" data-value-field="CampaignId" data-bind="value:' + options.field + '"/>')
+                    .appendTo(container)
+                    .kendoDropDownList({
+                        autoBind: true,
+                        dataTextField: "CampaignName",
+                        dataValueField: "CampaignId",
+                        dataSource: {
+                            type: "json",
+                            transport: {
+                                read: "http://localhost/MailChimpService/ConfigService.svc/GetCampaigns/"
+                            },
+                            schema: {
+                                data: "CampaignList"
+                            }
+                        },
+                        change: function () {
+                            // Alter the Service Location Grid DataSource to contain the Selected Account              
+                            for (var i = 0; i < gridDataSource._data.length; i++) {
+                                if (gridDataSource._data[i].Id == selectedGridRow.Id) {
+                                    gridDataSource._data[i].AccountId = selectedGridRow.Campaign.CampaignId;
+                                    gridDataSource._data[i].AccountName = selectedGridRow.Campaign.CampaignName;
+                                }
+                            }
+
+                            buildGrid();
+                        }
+                    });
+            }
+
+            $('mailChimpAddButton').click(function () {
+
+                gridDataSource.Add({ CampaignId: "", CampaignName: "", AccountId: "", AccountName: "" });
+
+                buildGrid();
+
+            });
+
+            $('#mailChimpSaveButton').click(function () {
+
+                kendo.ui.progress($("#body"), true);
+
+                $.ajax({
+                    url: 'http://localhost/MailChimpService/ConfigService.svc/SaveConfigs/',
+                    type: 'POST',
+                    datatype: 'json',
+                    contentType: 'application/json',
+                    data: JSON.stringify(gridDataSource._data),
+                    success: function (data, textStatus, jqXhr) {
+                        location.reload();
+                    }//,
+                    // TODO - on error display error message
+                    //error: function (jqXhr, textStatus, errorThrown) {
+                    //    
+                    //}
+                });
+
+                return false;
+
+            });
+            
+            function deleteConfig(id) {
+
+                $.ajax({
+                    url: 'http://localhost/MailChimpService/ConfigService.svc/DeleteConfig/' + id,
+                    type: 'DELETE',
+                    datatype: 'json',
+                    contentType: 'application/json',
+                    success: function (data, textStatus, jqXhr) {
+                        location.reload();
+                    } //,
+                    // TODO - on error display error message
+                    //error: function (jqXhr, textStatus, errorThrown) {
+                    //    
+                    //}
+                });
+
+            }
+
+            $('#mailChimpUploadButton').click(function() {
+
+                kendo.ui.progress($(document), true);
+
+                $.ajax({
+                    url: 'http://localhost/MailChimpService/ConfigService.svc/SaveAndUploadEmails/',
+                    type: 'POST',
+                    datatype: 'json',
+                    contentType: 'application/json',
+                    data: JSON.stringify(gridDataSource._data),
+                    success: function (data, textStatus, jqXhr) {
+                        location.reload();
+                    } //,
+                    // TODO - on error display error message
+                    //error: function (jqXhr, textStatus, errorThrown) {
+                    //    
+                    //}
+                });
+
+                return false;
+            });
+
+
+        </script>
+
+    </body>
+
+</html>

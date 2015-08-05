@@ -1,0 +1,7 @@
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-INT\bin\Release\HSC-MC-INT.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-INT\bin\Release\HSC-MC-INT.pdb
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-INT\bin\Release\PerceptiveMCAPI.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-INT\bin\Release\CookComputing.XmlRpcV2.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-INT\obj\Release\HSC-MC-INT.csprojResolveAssemblyReference.cache
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-INT\obj\Release\HSC-MC-INT.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-INT\obj\Release\HSC-MC-INT.pdb

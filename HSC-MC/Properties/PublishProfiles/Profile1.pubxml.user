@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2015-02-21T14:31:30.9218203-07:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\Users\johnd.meyer\Desktop\MailChimpWeb</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_LocalResources/Default.aspx.resx">
+      <publishTime>11/14/2014 07:48:04</publishTime>
+    </File>
+    <File Include="bin/CookComputing.XmlRpcV2.dll">
+      <publishTime>09/05/2010 18:47:56</publishTime>
+    </File>
+    <File Include="bin/fonts/fontawesome-webfont.ttf">
+      <publishTime>08/26/2014 10:46:50</publishTime>
+    </File>
+    <File Include="bin/fonts/fontawesome-webfont.woff">
+      <publishTime>08/26/2014 10:46:50</publishTime>
+    </File>
+    <File Include="bin/HSC-MC-Common.dll">
+      <publishTime>03/31/2015 05:56:20</publishTime>
+    </File>
+    <File Include="bin/HSC-MC-DAL.dll">
+      <publishTime>03/26/2015 04:44:06</publishTime>
+    </File>
+    <File Include="bin/HSC-MC-INT.dll">
+      <publishTime>03/24/2015 04:56:25</publishTime>
+    </File>
+    <File Include="bin/HSC-MC-WS.dll">
+      <publishTime>04/08/2015 05:26:52</publishTime>
+    </File>
+    <File Include="bin/HSC-MC.dll">
+      <publishTime>04/08/2015 05:27:00</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>07/12/2008 03:30:56</publishTime>
+    </File>
+    <File Include="bin/PerceptiveMCAPI.dll">
+      <publishTime>12/05/2010 11:02:10</publishTime>
+    </File>
+    <File Include="Config.htm">
+      <publishTime>03/14/2015 07:56:26</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>12/07/2014 06:43:41</publishTime>
+    </File>
+    <File Include="css/css.css">
+      <publishTime>02/16/2015 11:14:06</publishTime>
+    </File>
+    <File Include="css/font-awesome.css">
+      <publishTime>08/26/2014 10:46:50</publishTime>
+    </File>
+    <File Include="css/font-awesome.min.css">
+      <publishTime>08/26/2014 10:46:50</publishTime>
+    </File>
+    <File Include="css/kendo.common.min.css">
+      <publishTime>11/19/2014 15:39:48</publishTime>
+    </File>
+    <File Include="css/kendo.dataviz.default.min.css">
+      <publishTime>11/19/2014 15:39:48</publishTime>
+    </File>
+    <File Include="css/kendo.dataviz.min.css">
+      <publishTime>11/19/2014 15:39:48</publishTime>
+    </File>
+    <File Include="css/kendo.default.min.css">
+      <publishTime>11/19/2014 15:39:48</publishTime>
+    </File>
+    <File Include="css/kendo.materialblack.min.css">
+      <publishTime>11/19/2014 15:39:48</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>11/14/2014 07:48:04</publishTime>
+    </File>
+    <File Include="images/Capture.PNG">
+      <publishTime>11/14/2014 07:48:04</publishTime>
+    </File>
+    <File Include="images/Chimp.PNG">
+      <publishTime>11/14/2014 07:48:04</publishTime>
+    </File>
+    <File Include="js/bootstrap.js">
+      <publishTime>12/07/2014 06:43:18</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>12/07/2014 06:43:18</publishTime>
+    </File>
+    <File Include="js/jquery-1.11.1.js">
+      <publishTime>12/07/2014 06:43:18</publishTime>
+    </File>
+    <File Include="js/jquery-1.11.1.min.js">
+      <publishTime>12/07/2014 06:43:18</publishTime>
+    </File>
+    <File Include="js/kendo.all.min.js">
+      <publishTime>11/19/2014 15:39:48</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/31/2015 05:56:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

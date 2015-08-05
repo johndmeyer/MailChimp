@@ -1,0 +1,22 @@
+﻿body
+{
+    background-color:#213164;
+    background-image:url('../images/Chimp.PNG');
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+#cmbs
+{
+    margin:0 auto;
+}
+#content 
+{
+	width:500px;
+	margin:0px auto;
+	
+}
+
+
+.k-grid .k-alt {
+   background-color: #2D2D2D; /* specify the alternate background-color */
+}

@@ -1,0 +1,10 @@
+C:\Users\johnd.meyer\Desktop\HSC-MailChimp\HSC-MC\HSC-MC-TEST\bin\Debug\HSC-MC-TEST.dll
+C:\Users\johnd.meyer\Desktop\HSC-MailChimp\HSC-MC\HSC-MC-TEST\bin\Debug\HSC-MC-TEST.pdb
+C:\Users\johnd.meyer\Desktop\HSC-MailChimp\HSC-MC\HSC-MC-TEST\obj\Debug\HSC-MC-TEST.dll
+C:\Users\johnd.meyer\Desktop\HSC-MailChimp\HSC-MC\HSC-MC-TEST\obj\Debug\HSC-MC-TEST.pdb
+C:\Users\johnd.meyer\Desktop\HSC-MailChimp\HSC-MC\HSC-MC-TEST\obj\Debug\HSC-MC-TEST.csprojResolveAssemblyReference.cache
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-TEST\bin\Debug\HSC-MC-TEST.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-TEST\bin\Debug\HSC-MC-TEST.pdb
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-TEST\obj\Debug\HSC-MC-TEST.csprojResolveAssemblyReference.cache
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-TEST\obj\Debug\HSC-MC-TEST.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-TEST\obj\Debug\HSC-MC-TEST.pdb

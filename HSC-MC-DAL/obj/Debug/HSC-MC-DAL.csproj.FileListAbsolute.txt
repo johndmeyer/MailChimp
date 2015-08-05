@@ -1,0 +1,9 @@
+C:\Users\johnd.meyer\Desktop\HSC-MailChimp\HSC-MC\HSC-MC-DAL\bin\Debug\HSC-MC-DAL.dll
+C:\Users\johnd.meyer\Desktop\HSC-MailChimp\HSC-MC\HSC-MC-DAL\bin\Debug\HSC-MC-DAL.pdb
+C:\Users\johnd.meyer\Desktop\HSC-MailChimp\HSC-MC\HSC-MC-DAL\obj\Debug\HSC-MC-DAL.dll
+C:\Users\johnd.meyer\Desktop\HSC-MailChimp\HSC-MC\HSC-MC-DAL\obj\Debug\HSC-MC-DAL.pdb
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-DAL\bin\Debug\HSC-MC-DAL.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-DAL\bin\Debug\HSC-MC-DAL.pdb
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-DAL\obj\Debug\HSC-MC-DAL.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-DAL\obj\Debug\HSC-MC-DAL.pdb
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-DAL\obj\Debug\HSC-MC-DAL.csprojResolveAssemblyReference.cache

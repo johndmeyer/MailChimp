@@ -1,0 +1,5 @@
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-DAL\bin\Release\HSC-MC-DAL.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-DAL\bin\Release\HSC-MC-DAL.pdb
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-DAL\obj\Release\HSC-MC-DAL.csprojResolveAssemblyReference.cache
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-DAL\obj\Release\HSC-MC-DAL.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-DAL\obj\Release\HSC-MC-DAL.pdb

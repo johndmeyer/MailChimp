@@ -1,0 +1,6 @@
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-Common\bin\Release\HSC-MC-Common.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-Common\bin\Release\HSC-MC-Common.pdb
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-Common\bin\Release\log4net.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-Common\obj\Release\HSC-MC-Common.csprojResolveAssemblyReference.cache
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-Common\obj\Release\HSC-MC-Common.dll
+D:\Development\HSC-MailChimp\HSC-MC\HSC-MC-Common\obj\Release\HSC-MC-Common.pdb

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\johnd.meyer\Desktop\MailChimpWeb" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/HSC-MC-WS.dll" publishTime="02/20/2015 05:05:03" />
+    <file relUrl="js/jquery-1.11.1.min.js" publishTime="12/07/2014 06:43:18" />
+    <file relUrl="Config.htm" publishTime="02/20/2015 05:05:02" />
+    <file relUrl="css/font-awesome.min.css" publishTime="08/26/2014 10:46:50" />
+    <file relUrl="css/kendo.common.min.css" publishTime="11/19/2014 15:39:48" />
+    <file relUrl="App_LocalResources/Default.aspx.resx" publishTime="11/14/2014 07:48:04" />
+    <file relUrl="js/kendo.all.min.js" publishTime="11/19/2014 15:39:48" />
+    <file relUrl="js/bootstrap.min.js" publishTime="12/07/2014 06:43:18" />
+    <file relUrl="bin/HSC-MC.pdb" publishTime="02/21/2015 14:31:29" />
+    <file relUrl="images/Chimp.PNG" publishTime="11/14/2014 07:48:04" />
+    <file relUrl="css/kendo.dataviz.default.min.css" publishTime="11/19/2014 15:39:48" />
+    <file relUrl="bin/HSC-MC.dll" publishTime="02/21/2015 14:31:30" />
+    <file relUrl="images/Capture.PNG" publishTime="11/14/2014 07:48:04" />
+    <file relUrl="bin/HSC-MC-DAL.pdb" publishTime="02/20/2015 05:05:02" />
+    <file relUrl="css/css.css" publishTime="02/16/2015 11:14:06" />
+    <file relUrl="css/font-awesome.css" publishTime="08/26/2014 10:46:50" />
+    <file relUrl="css/kendo.default.min.css" publishTime="11/19/2014 15:39:48" />
+    <file relUrl="bin/CookComputing.XmlRpcV2.dll" publishTime="09/05/2010 18:47:56" />
+    <file relUrl="css/kendo.materialblack.min.css" publishTime="11/19/2014 15:39:48" />
+    <file relUrl="css/kendo.dataviz.min.css" publishTime="11/19/2014 15:39:48" />
+    <file relUrl="bin/HSC-MC-INT.dll" publishTime="02/20/2015 05:05:02" />
+    <file relUrl="Default.aspx" publishTime="11/14/2014 07:48:04" />
+    <file relUrl="bin/PerceptiveMCAPI.dll" publishTime="12/05/2010 11:02:10" />
+    <file relUrl="bin/HSC-MC-INT.pdb" publishTime="02/20/2015 05:05:02" />
+    <file relUrl="js/bootstrap.js" publishTime="12/07/2014 06:43:18" />
+    <file relUrl="css/bootstrap.css" publishTime="12/07/2014 06:43:41" />
+    <file relUrl="bin/HSC-MC-DAL.dll" publishTime="02/20/2015 05:05:03" />
+    <file relUrl="bin/HSC-MC-WS.pdb" publishTime="02/20/2015 05:05:03" />
+    <file relUrl="bin/fonts/fontawesome-webfont.ttf" publishTime="08/26/2014 10:46:50" />
+    <file relUrl="Web.config" publishTime="02/05/2015 04:53:03" />
+    <file relUrl="js/jquery-1.11.1.js" publishTime="12/07/2014 06:43:18" />
+    <file relUrl="bin/fonts/fontawesome-webfont.woff" publishTime="08/26/2014 10:46:50" />
+  </publishProfile>
+</publishData>
