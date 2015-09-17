@@ -16,7 +16,7 @@ namespace HSC_MC_INT
         public MC_INT_Api()
         {
             // TODO: Put this api key in a config file
-            apikey = "afc1608d4987349c6fc51cb186ca5616-us5";
+            apikey = "EnterAPIKeyHere";
         }
 
         // Push email list up to MailChimp email campaign
